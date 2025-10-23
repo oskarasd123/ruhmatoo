@@ -3,6 +3,11 @@
 Kõik stiili peaks siin kirjeldama
 */
 
+.värvita-link {
+    text-decoration: none; 
+    color: #000;
+}
+
 .vari {
     box-shadow: 2px 2px 4px #000a;
     border-right: solid 2px #fff2;
