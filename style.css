@@ -1,0 +1,16 @@
+/* 
+Ühine fail stiili jaoks 
+Kõik stiili peaks siin kirjeldama
+*/
+
+.vari {
+    box-shadow: 2px 2px 4px #000a;
+    border-right: solid 2px #fff2;
+    border-bottom: solid 2px #fff2;
+}
+
+.kast {
+    background-color: #ccc;
+    padding:5px;
+    border-radius: 20px;
+}
