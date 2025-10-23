@@ -14,7 +14,51 @@
     <div style="padding-left: 10vw; font-size: 150%;">
       <p>Tere</p>
       <p>Minu teemaks on "teen seda, mida tahan"</p>
-      <div class="kast vari" style="width: 100px; height: 100px;"></div>
+      <div class="kast vari">
+        <p>tabel</p>
+        <table>
+            <tr>
+                <th>
+                    a
+                </th>
+                <th>
+                    b
+                </th>
+                <th>
+                    c
+                </th>
+            </tr>
+            <tr>
+                <th>cdd</th>
+                <th>adb</th>
+                <th>kast</th>
+            </tr>
+        </table>
+      </div>
+      <div class="kast">
+        <h2>js filter</h2>
+        <input type="text" id="filter-väli">
+        <div id="filter">
+            <p>raamat</p>
+            <p>pann</p>
+            <p>kaan</p>
+            <p>pott</p>
+            <p>pealkiri</p>
+            <p>Suvaline</p>
+        </div>
+        <script>
+            const tabel = document.getElementById("filter");
+            const read = tabel.querySelectorAll("p");
+            const väli = document.getElementById("filter-väli");
+            väli.addEventListener("input", () => {
+                let text = väli.value;
+                read.forEach(rida => {
+                    rida.style.display = (rida.textContent.indexOf(text) != -1) ? "" : "none";
+                    console.log((rida.textContent.indexOf(text) != -1))
+                })
+            });
+        </script>
+      </div>
     </div>
   </body>
 </html>

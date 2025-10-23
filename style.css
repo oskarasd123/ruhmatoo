@@ -16,6 +16,14 @@ Kõik stiili peaks siin kirjeldama
 
 .kast {
     background-color: #ccc;
-    padding:5px;
+    padding: 8px;
     border-radius: 20px;
+    width: fit-content;
 }
+
+
+table tr th {
+    border: solid 1px #000;
+}
+
+
