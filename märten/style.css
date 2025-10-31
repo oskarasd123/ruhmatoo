@@ -1,0 +1,92 @@
+.vertical-bar {
+  position: fixed;            
+  top: 0;
+  left: 0;
+  height: 100%;                  
+  width: 5cm;                    
+  border-right: 3px solid #000;  
+  background: transparent;       
+  display: flex;
+  flex-direction: column;        
+  align-items: flex-start;
+  padding-top: 150px;            
+  padding-left: 20px;
+  box-sizing: border-box;
+  z-index: 10;   
+}
+
+
+.vertical-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.vertical-bar li {
+  margin-bottom: 25px;
+}
+
+.vertical-bar a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 0.9em;
+  display: inline-block;
+  border-bottom: 2px solid #000;   
+  padding-bottom: 4px;
+  transition: all 0.2s ease;
+}
+
+.vertical-bar a:hover {
+  text-decoration: underline;
+  border-bottom: 3px solid #000;   
+  text-decoration: none;
+}
+
+
+html, body {
+      height: 100%;
+      margin: 0;
+      overflow-y: scroll;
+      background: url("taust.jpg") center / cover no-repeat fixed;
+      font-family: "Times New Roman", Times, serif;
+      line-height: 1.7;
+    }
+    
+     p, ul, ol, h1, h2 {
+    text-align: justify;
+    margin: 0 200px;
+     }
+     ul ul, ol ul, ul ol, ol ol {
+  margin-left: 0.3cm;   
+  text-align: left;   
+}
+     h1 {
+  border: 4px solid #000;       
+  padding: 10px 20px;           
+  margin-top: 40px;
+  margin-bottom: 25px;
+  display: inline-block;         
+}
+
+h2 {
+  border: 3px solid #000;       
+  padding: 8px 16px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 15px 0;
+  border-top: 3px solid #000;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+}
