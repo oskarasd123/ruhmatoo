@@ -3,9 +3,19 @@
 Kõik stiili peaks siin kirjeldama
 */
 
-.värvita-link {
-    text-decoration: none; 
-    color: #000;
+a { /* peida kõik lingid vaikimisi. peab kasutama nõrk-link või link, et eristada*/
+    color:#000; 
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: underline; 
+    color: #00f;
+}
+
+.nõrk-link {
+    text-decoration: underline;
+    text-decoration-color: #0004;
 }
 
 .vari {
@@ -25,14 +35,17 @@ header {
     background: #ededcd;
     margin:0 !important;
     padding:1px;
+    height:90px;
 }
+
+header h1 {
+    padding:1px;
+    margin-left: 5vw;
+}
+
 body, div {
     padding: 0;
     margin:0;
-}
-header h1 {
-    padding:10px;
-    margin-left: 5vw;
 }
 
 table tr th {
