@@ -18,7 +18,7 @@
 <br>
 <p>Järgneval netileheküljel saab ligipääsu erinevatele õppimismaterjalidele. Selleks tuleb teha endale konto, aga materjalide ligipääs on siiski    tasuta <a href="https://deployedmedicine.com/">siit.</a><p>
 <br>
-<img src="meedik.jpg" width = "600" height="360">
+<img src="meedik.jpg" class="responsive-img">
 <br>
 <h2 id="printsiibid">Põhi printsiibid</h2>
 <ul>
@@ -46,10 +46,11 @@
         </li>
     </ul>
 <br>
-<div style="text-align: center;">  
-    <img src="cuf.jpg" width = "280" height="200">
-    <img src="tfc.png" width = "280" height="200">
-    <img src="tacevac.jpg" width = "280" height="200">
+
+<div class="image-row">   
+    <img src="cuf.jpg" class="responsive-img">
+    <img src="tfc.png" class="responsive-img">
+    <img src="tacevac.jpg" class="responsive-img">
 </div>
 <br>
 <h2 id="valjaope">Väljaõppe ja oma panus</h2>
@@ -66,6 +67,47 @@
     <li>Õppimine teiste kogemusest - Palju teadmisi tuleb teiste meedikute, veteranide ja instruktori tagasiside kaudu. Parimad meedikud on just need, kes on uudishimulikud ja võtavad initsiatiivi õppida ka väljaspool ametlikku programmi. Näiteks käivad väga paljud Ukraina meedikuid pidamas väga harivaid loenguid.</li>
             
 </ol>
+<br>
+<h2>Testi end!</h2>
+<p>Mis tähendab CUF?</p>
+
+<button onclick="checkAnswer('a', 'result1')">Care During Fire</button>
+<button onclick="checkAnswer('b', 'result1')">Care Under Fire</button>
+<button onclick="checkAnswer('c', 'result1')">Care During Evacuation</button>
+<p id="result1"></p>
+
+<p>Mis tähistab MARCH algoritmi “R”?</p>
+
+<button onclick="checkAnswer('a', 'result2')">Respiration</button>
+<button onclick="checkAnswer('b', 'result2')">Rehabilitation</button>
+<button onclick="checkAnswer('c', 'result2')">Recovery</button>
+<p id="result2"></p>
+
+<p>Mida tehakse MARCH algoritmi etapis “M”?</p>
+<button onclick="checkAnswer('a', 'result3')">Massiivsete verejooksude peatamine</button>
+<button onclick="checkAnswer('b', 'result3')">Hingamisteede avamine</button>
+<button onclick="checkAnswer('c', 'result3')">Šoki vältimine</button>
+<p id="result3"></p>
+
+<script>
+function checkAnswer(ans, id) {
+    const res = document.getElementById(id);
+
+  
+  if (
+    (id === 'result1' && ans === 'b') ||  
+    (id === 'result2' && ans === 'a') ||  
+    (id === 'result3' && ans === 'a')     
+  ) {
+    res.textContent = "Õige vastus!";
+    res.style.color = "green";
+  } else {
+    res.textContent = "Vale vastus, proovi uuesti.";
+    res.style.color = "red";
+  }
+}
+</script>
+
 <br>
 <br>
 <footer>
