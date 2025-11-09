@@ -3,17 +3,17 @@
 Kõik stiili peaks siin kirjeldama
 */
 
-a { /* peida kõik lingid vaikimisi. peab kasutama nõrk-link või link, et eristada*/
-    color:#000; 
+:root {
+    --text-color: #000;
+}
+
+.mitte-link {
+    color:var(--text-color);
     text-decoration: none;
 }
 
-.link {
-    text-decoration: underline; 
-    color: #00f;
-}
-
 .nõrk-link {
+    color: var(--text-color);
     text-decoration: underline;
     text-decoration-color: #0004;
 }
