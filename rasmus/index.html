@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lausk - Rasmus</title>
+    <meta name="description" content="Rasmus isiklik portfoolio - kõrgushüpe ja arvutimängud">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav id="nav">
+        <div class="nav-container">
+            <div><a class="mitte-link logo" href="../index.html">LAUSK</a></div>
+            <ul class="nav-links">
+                <li><a href="#korgus">Kõrgushüpe</a></li>
+                <li><a href="#gaming">Arvutimängud</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Rasmus</h1>
+        <p>Tere tulemast! Siin jagan infot oma kahe peamise hobi kohta: kõrgushüpe ja arvutimängud.</p>
+        <div class="hero-btns">
+            <a href="#korgus" class="btn btn-outline">Kõrgushüpe</a>
+            <a href="#gaming" class="btn btn-outline">Arvutimängud</a>
+        </div>
+    </section>
+
+
+    <section id="korgus" class="section">
+        <h2>Kõrgushüpe</h2>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-icon">🏆</div>
+                <div class="stat-label">Parim tulemus</div>
+                <div class="stat-value">1.95m</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">📈</div>
+                <div class="stat-label">Treeningud</div>
+                <div class="stat-value">4-5x/nädal</div>
+            </div>
+        </div>
+
+        <div class="description">
+            <p>Kõrgushüpe on minu jaoks midagi rohkemat kui lihtsalt hüppamine. Iga kord, kui ma jooksen ja viimase sammu teen, tunnen, kuidas kogu keha töötab koos, et ületada see hetkeline takistus.</p>
+            
+            <p>Ma keskendun iga liikumise täpsusele: kui palju hoogu ma vajan, millal täpselt keha üle lati viia, ja kuidas maanduda. Kõige olulisem osa on kindlasti tehnika – näiteks "flop" hüppetehnika on see, mida ma kasutan, sest see annab mulle parima võimaluse kõrguse ületamiseks.</p>
+            
+            <p>Kui ma kõrguse ületan, on tunne kui täiesti oma piiride ületamine, ja see on just see, mis mind kõrgushüppe juures kõige rohkem tõmbab.</p>
+            
+            <p>Kui tahaksin midagi oma hüppekogemuses muuta, siis arvatavasti keskenduksin rohkem oma stardikiirusel – see määrab palju, kui hästi ma latist üle saan. Samuti võib hingamise ja keha paindlikkuse õige tasakaalu leidmine olla veel üks asi, mida saan arendada.</p>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="pildid/kõrgus1.jpg" alt="Kõrgushüpe võistlusel">
+                <div class="gallery-overlay">
+                    <span>Võistlusel</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="pildid/kõrgus2.jpg" alt="Kõrgushüpe treening">
+                <div class="gallery-overlay">
+                    <span>Peale võiduhüpet</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="pildid/auhinnaga.png" alt="Kõrgushüpe tehnika">
+                <div class="gallery-overlay">
+                    <span>Uhkelt võidukas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gaming" class="section">
+        <h2>Minu top 3 mängitumat mängu</h2>
+        
+        <div class="games">
+            <div class="game-card" data-game="cs2">
+                <img src="pildid/cs2.png" alt="Counter-Strike 2">
+                <div class="game-info">
+                    <h3>Counter-Strike 2</h3>
+                    <p>Taktikaalne 5v5 tulistamismäng</p>
+                </div>
+            </div>
+            
+            <div class="game-card" data-game="wt">
+                <img src="pildid/wt.png" alt="War Thunder">
+                <div class="game-info">
+                    <h3>War Thunder</h3>
+                    <p>Sõjamasinate võitlusmäng</p>
+                </div>
+            </div>
+            
+            <div class="game-card" data-game="lol">
+                <img src="pildid/Xerath.png" alt="League of Legends">
+                <div class="game-info">
+                    <h3>League of Legends</h3>
+                    <p>Strateegiline MOBA</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="game-description" class="game-description" style="display: none;">
+            <div id="game-description-content"></div>
+        </div>
+
+        <div class="gaming-stats">
+            <div class="gaming-stat-item">
+                <div class="stat-emoji">⏰</div>
+                <div class="stat-number">5+</div>
+                <div class="stat-text">aastat kogemust CS2-s</div>
+            </div>
+            <div class="gaming-stat-item">
+                <div class="stat-emoji">🎮</div>
+                <div class="stat-number">4500+</div>
+                <div class="stat-text">Lahingut peetud War Thunderis</div>
+            </div>
+            <div class="gaming-stat-item">
+                <div class="stat-emoji">👥</div>
+                <div class="stat-number">Gold</div>
+                <div class="stat-text">Rank LoL-is</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
