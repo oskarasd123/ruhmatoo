@@ -1,8 +1,25 @@
 
 
+:root{
+    --background-color : #242424;
+}
+
 body{
     color: white;
-    background-color: #222;
+    background-color: var(--background-color);
+}
+
+.background {
+    background-image: url('taust.png');
+    background-size: 100vw;
+    padding-bottom: 50vh;
+}
+
+.background p{
+    text-shadow: 0 0 10px var(--background-color), 
+    0 0 10px var(--background-color), 
+    0 0 10px var(--background-color),
+    0 0 10px var(--background-color);
 }
 
 header {
@@ -10,5 +27,10 @@ header {
 }
 
 p {
-    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+
+a {
+    color: #8cf;
 }
