@@ -1,48 +1,62 @@
-
-.vertical-bar {
-  position: fixed;            
+nav {
+  position: fixed;
   top: 0;
   left: 0;
-  height: 100%;                  
-  width: 5cm;                    
-  border-right: 3px solid #000;  
-  background: transparent;       
+  width: 100%;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom: 3px solid #000;
+  z-index: 1000;
   display: flex;
-  flex-direction: column;        
-  align-items: flex-start;
-  padding-top: 150px;            
-  padding-left: 20px;
-  box-sizing: border-box;
-  z-index: 10;   
+  align-items: center;
 }
 
 
-.vertical-bar ul {
+.top-spacing {
+  height: 100px;
+}
+
+.nav-container {
+  width: 100%;                 
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  padding: 0 40px;             
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+}
+.logo {
+  font-size: 1.3rem;                        
+  font-weight: bold;
+  white-space: nowrap;                      
+  color: #000;
+  text-decoration: none;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
   list-style: none;
   margin: 0;
   padding: 0;
+  white-space: nowrap;
 }
 
-.vertical-bar li {
-  margin-bottom: 25px;
-}
-
-.vertical-bar a {
-  text-decoration: none;
+.nav-links a {
   color: #000;
   font-weight: bold;
-  font-size: 0.9em;
-  display: inline-block;
-  border-bottom: 2px solid #000;   
-  padding-bottom: 4px;
-  transition: all 0.2s ease;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: 0.2s;
 }
 
-.vertical-bar a:hover {
-  text-decoration: underline;
-  border-bottom: 3px solid #000;   
-  text-decoration: none;
+.nav-links a:hover {
+  border-bottom: 2px solid #000;
 }
+
+nav.hide {
+  transform: translateY(-100%);
+}
+
 
 
 html, body {
@@ -52,6 +66,8 @@ html, body {
       background: url("taust.jpg") center / cover no-repeat fixed;
       font-family: "Times New Roman", Times, serif;
       line-height: 1.7;
+      font-size: 18px;
+    
     }
     
      p, ul, ol, h1, h2 {
@@ -158,4 +174,8 @@ iframe {
   margin: 20px auto;
   max-width: 100%;
   border-radius: 6px;
+}
+
+h2, h1 {
+  scroll-margin-top: 80px; 
 }
