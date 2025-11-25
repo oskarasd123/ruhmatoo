@@ -21,7 +21,9 @@ nav {
   transition: transform 0.3s;
 }
 
-nav.hidden { transform: translateY(-100%); }
+nav.hidden {
+  transform: translateY(-100%);
+}
 
 .nav-container {
   max-width: 1200px;
@@ -49,7 +51,9 @@ nav.hidden { transform: translateY(-100%); }
   text-decoration: none;
 }
 
-.nav-links a:hover { color: #ff6b35; }
+.nav-links a:hover {
+  color: #ff6b35;
+}
 
 .hero {
   min-height: 100vh;
@@ -92,17 +96,16 @@ nav.hidden { transform: translateY(-100%); }
   color: #fff;
 }
 
-.btn-primary:hover { background: #ff8555; }
+.btn-primary:hover,
+.btn-outline:hover {
+  background: #ff8555;
+  color: #fff;
+}
 
 .btn-outline {
   background: transparent;
   color: #ff6b35;
   border: 2px solid #ff6b35;
-}
-
-.btn-outline:hover {
-  background: #ff6b35;
-  color: #fff;
 }
 
 .section {
@@ -118,6 +121,18 @@ nav.hidden { transform: translateY(-100%); }
   margin-bottom: 2rem;
 }
 
+.stat-card,
+.game-card,
+.description,
+.game-description,
+.gaming-stats,
+.jump-tips,
+.beginner-tips {
+  background: #2a2a2a;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
 .stats {
   display: flex;
   gap: 2rem;
@@ -126,9 +141,6 @@ nav.hidden { transform: translateY(-100%); }
 
 .stat-card {
   flex: 1;
-  background: #2a2a2a;
-  padding: 2rem;
-  border-radius: 8px;
   text-align: center;
 }
 
@@ -149,41 +161,106 @@ nav.hidden { transform: translateY(-100%); }
   color: #ff6b35;
 }
 
-.description, .game-description, .gaming-stats {
-  background: #2a2a2a;
-  padding: 2rem;
-  border-radius: 8px;
+.content-with-tips {
+  display: flex;
+  gap: 2rem;
   margin-bottom: 2rem;
+  align-items: stretch;
 }
 
-.description p, .game-description p {
+.description-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.content-with-tips .stats {
+  gap: 1.5rem;
+  margin-bottom: 0;
+}
+
+.content-with-tips .description {
+  flex: 1;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.jump-tips {
+  flex: 0 0 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.jump-tips h3,
+.beginner-tips h3 {
+  color: #ff6b35;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.beginner-tips h3 {
+  text-align: center;
+}
+
+.tip-item,
+.jump-tips .tip-item {
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 6px;
+  color: #ccc;
+  border-left: 3px solid #ff6b35;
+  margin-bottom: 1rem;
+}
+
+.tip-item:last-child,
+.jump-tips .tip-item:last-child {
+  margin-bottom: 0;
+}
+
+.tip-item strong,
+.jump-tips .tip-item strong {
+  color: #ff6b35;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.description p,
+.game-description p {
   color: #ccc;
   margin-bottom: 1rem;
 }
 
-.description p:last-child, .game-description p:last-child { margin-bottom: 0; }
+.description p:last-child,
+.game-description p:last-child {
+  margin-bottom: 0;
+}
 
 .game-description {
-  margin-top: 2rem;
-  margin-bottom: 0;
+  margin: 2rem 0 0;
   animation: fadeIn 0.3s;
 }
 
-.game-description p { line-height: 1.8; }
+.game-description p {
+  line-height: 1.8;
+}
 
-.gallery, .games {
+.gallery,
+.games {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
-.games { gap: 2rem; }
+.games {
+  gap: 2rem;
+}
 
 .gallery-item {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
-  cursor: pointer;
 }
 
 .gallery img {
@@ -191,10 +268,12 @@ nav.hidden { transform: translateY(-100%); }
   height: 250px;
   object-fit: cover;
   border-radius: 8px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s;
 }
 
-.gallery-item:hover img { transform: scale(1.05); }
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
 
 .gallery-overlay {
   position: absolute;
@@ -204,11 +283,13 @@ nav.hidden { transform: translateY(-100%); }
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s;
   border-radius: 8px;
 }
 
-.gallery-item:hover .gallery-overlay { opacity: 1; }
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
 
 .gallery-overlay span {
   color: #fff;
@@ -219,11 +300,10 @@ nav.hidden { transform: translateY(-100%); }
 }
 
 .game-card {
-  background: #2a2a2a;
-  border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
+  padding: 0;
 }
 
 .game-card:hover {
@@ -231,12 +311,15 @@ nav.hidden { transform: translateY(-100%); }
   box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
 }
 
-.game-card.active { box-shadow: 0 0 0 3px #ff6b35; }
+.game-card.active {
+  box-shadow: 0 0 0 3px #ff6b35;
+}
 
 .game-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  display: block;
 }
 
 .game-info {
@@ -248,7 +331,9 @@ nav.hidden { transform: translateY(-100%); }
   margin-bottom: 0.5rem;
 }
 
-.game-info p { color: #999; }
+.game-info p {
+  color: #999;
+}
 
 .gaming-stats {
   display: flex;
@@ -277,7 +362,18 @@ nav.hidden { transform: translateY(-100%); }
   margin-bottom: 0.3rem;
 }
 
-.stat-text { color: #ccc; }
+.stat-text {
+  color: #ccc;
+}
+
+.beginner-tips {
+  margin-top: 2rem;
+}
+
+.tips-grid {
+  display: grid;
+  gap: 1rem;
+}
 
 @keyframes fadeIn {
   from {
