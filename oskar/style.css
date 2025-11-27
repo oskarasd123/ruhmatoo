@@ -1,14 +1,57 @@
 
 
+
+.background {
+    background-image: url('taust.png');
+    background-size: 100vw;
+    padding-bottom: 50vh;
+}
+
+.background p{
+    text-shadow: 0 0 10px var(--background-color), 
+    0 0 10px var(--background-color), 
+    0 0 10px var(--background-color),
+    0 0 10px var(--background-color);
+}
+
 body{
     color: white;
-    background-color: #222;
+    background-color: var(--background-color);
+    padding-top: 120px;
 }
 
 header {
     background: #cdeded;
+    box-shadow: #cdeded 0px 20px 20px, #cdeded60 0px 20px 60px;
+    position: absolute;
+    top: 0;
+    width: 110vw;
+    margin-left: -5vw;
+    padding-left: 10vw;
+
 }
 
 p {
-    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+a {
+    color: #8cf;
+}
+
+img {
+    border-radius: 15px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+details {
+    background-color: #15151580;
+    border-radius: 15px;
+    padding-left: 10px;
+    width: 55vw;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
 }
