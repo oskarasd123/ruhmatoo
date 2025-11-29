@@ -33,7 +33,7 @@ Kõik stiili peaks siin kirjeldama
 
 header {
     background: #ededcd;
-    margin:0 !important;
+    margin:0;
     padding:1px;
     height:90px;
 }
