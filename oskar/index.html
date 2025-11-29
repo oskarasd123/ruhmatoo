@@ -6,35 +6,98 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
+        <div class="background" style="padding-left: 25vw; font-size: 150%; width: 50vw;">
+            <div style="padding: 10px; background-color: #24242450;">
+                <div style="padding: 10px; background-color: #24242450;">
+                    <p>
+                        Mina uurin masinõpet. Ma teinud hobiprojektidena masinõppe mudelite treenimist.<br>
+                        Ma olen põhiliselt tegelenud masinnägemisega, aga olen ka huvitatud keele mudelitest.<br>
+                    </p>
+                    <p>
+                        Masinõppe õppimist alustada saab kõige paremini keele mudelilt küsides ja ise tehes. <br>
+                        Niivisi, kui endal huvi on, saab kergesti teadmisi ja kogemusi masinõppe kohta.<br>
+                    </p>
+                    <p>
+                        Mina alguses mõtlesin, et tahaks ühes mängus automatiseerida suvaliselt paigutatud tähtede kogumist.
+                        Ma tahtsin seda teha programmiga, mis saab lihtsalt ekraani pilti vaadates tuvastada, kus on need tähed 
+                        ja siis wasd nuppe vajutades nendeni liikuda.
+                        Selle jaoks tegin mudeli, mis võtab sisse väikse pildi ja ennustab seal sees ühe tähe asukohta.
+                        Selle jaoks kogusin ise treenimis andmeid ning treenisin mudeli, mis suutis tuvastada neid hea täpsusega.
+                        Selle projektiga päriselt automatiseerimise juurde ei jõudnud, kuna poole peal läks 
+                        huvi mängult üle mudeli täpsemaks tegemisele. Selle projektiga õppisin süvaõppe kohta palju.<br>
+                    </p>
+                    <p>
+                        Ma olen lähiajal tegelenud teadusartikklite järgi tegemisega 
+                        (minu esimene <a href="https://github.com/oskarasd123/simple-ctm">enamvähem valmis projekt</a> (taustal on jupp selle koodist))<br>
+                    </p>
+                    <p>
+                        Näite video sellest projektist.<br>
+                        <img src="output.apng" style="width: 40vw;"><br>
+                        Vasakul on ennustus ja paremal on kuhu mudel n.ö vaatab.<br>
+                    </p>
+                    <h3>
+                        Millega ma veel tegelenud olen
+                    </h3>
+                    <details>
+                        <summary>
+                            Teksti tuvastus
+                        </summary>
+                        <div>
+                            <p>
+                                Teine minu esimestest projektidest oli teksti tuvastus. Selleks ma tegin mudeli, mis võtab sisse pildi ja ennustab seal esimest nelja sümbolit.
+                                Selle mudeli treenimisandmeteks ma tegin kuvatõmmiseid, kus ma märkisin ära teksti, ja genereerisin näiteid koodiga.
+                                Peale treenimist saab anda mudelile sisse järjest nihutatud pilte, et saada juppe tekstist ja siis saab need jupid kokku panna.
+                            </p>
+                            <p>
+                                Lõpuks see mudel suutis esimest kahte sümbolit ennustada õigesti 98% kordardes ning kolmandat ja neljandat 80% ja 50% kordadest.<br>
+                                Selle projektiga ma õppisin palju näidete genereerimise kohta.
+                            </p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>
+                            Niidetava muru tuvastus
+                        </summary>
+                        <div>
+                            <p>
+                                Ma mõtlesin, et võiks teha mudeli, mis suudab pildil märkida, kus on niidetav muru ja kus ei ole.
+                                Selle treenimis andmeteks ma kogusin enda aiast pilte ja märgistasin ära niidetava muru.
+                            </p>
+                            <p>
+                                <img src="muru.png" style="width: 40vw;"><br>
+                                Näide treenimis punktist, kus on pilt ja pildil märgitud muru<br>
+                            </p>
+                            <p>
+                                Minu kogutud treenimis andmestik on küll väike ja ma ei ole saanud sellega head mudelit treenida.
+                                Paremaid tulemusi saaksin võibolla nii, kui ma eel-treenin mingi suure avaliku andmestikuga ja siis
+                                kasutan enda anmestiku lõplikuks treenimiseks.
+                            </p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>
+                            Olen uurinud teksti mudelite kohta
+                        </summary>
+                        <div>
+                            <p>
+                                Teksti mudelitest rääkides olen uurinud <a href="https://github.com/KellerJordan/modded-nanogpt">github.com/KellerJordan/modded-nanogpt</a> repot.<br>
+                                See on huvitav, kuna seal on palju võtteid, millega on keele mudelite treenimist kiiremaks tehtud.<br>
+                            </p>
+                            <p>
+                                Kunagi proovisin ka ise implementeerida transformeri mudelit ja seda treenida enda arvuti peal.
+                                Aga kuna mu enda arvutil ei ole suurt arvutusvõimsust ja minu implementatsioon oli üpris aeglane, siis läks mitu päeva, et ühe katsetuse jaoks mudelit treenida.
+                            </p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+        <div class="lighting">
+        </div>
         <header>
             <a href="../index.html" class="mitte-link">
                 <h1><b>Lausk rühm, oskari leht</b></h1>
             </a>
         </header>
-        <div class="background" style="padding-left: 25vw; font-size: 150%;">
-            <p>
-                Mina uurin masinõpet. Ma teinud hobiprojektidena masinõppe mudelite treenimist.<br>
-                Ma olen põhiliselt tegelenud masinnägemisega, aga olen ka huvitatud teksti mudelitest.<br>
-            </p>
-            <p>
-                Masinõppe õppimist alustada saab kõige paremini vestlus mudelilt küsides ja ise tehes. <br>
-                Niivisi, kui endal huvi on, saab kergesti teadmisi ja kogemusi masinõppe kohta.<br>
-            </p>
-            <p>
-                Minu esimene projekt oli üks, kus ma proovisin mängus ühtede tähtede kogumist automatiseerida<br>
-                ja selle jaoks tegin mudeli, mis võtab sisse pildi ja ennustab seal sees ühe tähe asukohta.<br>
-                Selle jaoks kogusin ise andmeid ning treenisin mudeli.<br>
-                Selle projektiga eriti head mudelit ei saanud, aga õppisin süvaõppe kohta palju.<br>
-            </p>
-            <p>
-                Ma olen tegelenud teadusartikklite järgi tegemisega (praegu on veel ainult üks <a href="https://github.com/oskarasd123/simple-ctm">enamvähem valmis projekt</a>)<br>
-                <img src="output.apng" style="width: 40vw; margin: 30px; margin-left: 0px"><br>
-                Vasakul on ennustus ja paremal on kuhu mudel n.ö vaatab.<br>
-            </p>
-            <p>
-                Teksti mudelitest rääkides olen uurinud <a href="https://github.com/KellerJordan/modded-nanogpt">github.com/KellerJordan/modded-nanogpt</a> repot.<br>
-                Seal on inimesed teinud gpt treenimist järjest kiiremaks.<br>
-            </p>
-        </div>
     </body>
 </html>

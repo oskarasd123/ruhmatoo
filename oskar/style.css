@@ -1,12 +1,6 @@
 
-
-:root{
-    --background-color : #242424;
-}
-
-body{
-    color: white;
-    background-color: var(--background-color);
+:root {
+    --background-color: #242424;
 }
 
 .background {
@@ -22,15 +16,54 @@ body{
     0 0 10px var(--background-color);
 }
 
+body{
+    color: white;
+    background-color: var(--background-color);
+    padding-top: 120px;
+}
+
 header {
     background: #cdeded;
+    box-shadow: #cdeded 0px 20px 20px, #cdeded60 0px 20px 60px, #cdeded40 0px 50px 300px;
+    position: absolute;
+    top: 0;
+    width: 110vw;
+    margin-left: -5vw;
+    padding-left: 10vw;
+
+}
+
+.lighting {
+    background: #cdeded;
+    box-shadow: #cdeded60 0px 0px 40px, #cdeded40 0px 20px 80px, #cdeded20 0px 50px 150px;
+    position: fixed;
+    top: -100px;
+    width: 110vw;
+    margin-left: -5vw;
+    height: 100px;
 }
 
 p {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 
 a {
     color: #8cf;
+}
+
+img {
+    border-radius: 15px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+details {
+    background-color: #15151580;
+    border-radius: 15px;
+    padding-left: 10px;
+    width: 55vw;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
 }
