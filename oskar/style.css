@@ -1,5 +1,7 @@
 
-
+:root {
+    --background-color: #242424;
+}
 
 .background {
     background-image: url('taust.png');
@@ -22,13 +24,23 @@ body{
 
 header {
     background: #cdeded;
-    box-shadow: #cdeded 0px 20px 20px, #cdeded60 0px 20px 60px;
+    box-shadow: #cdeded 0px 20px 20px, #cdeded60 0px 20px 60px, #cdeded40 0px 50px 300px;
     position: absolute;
     top: 0;
     width: 110vw;
     margin-left: -5vw;
     padding-left: 10vw;
 
+}
+
+.lighting {
+    background: #cdeded;
+    box-shadow: #cdeded60 0px 0px 40px, #cdeded40 0px 20px 80px, #cdeded20 0px 50px 150px;
+    position: fixed;
+    top: -100px;
+    width: 110vw;
+    margin-left: -5vw;
+    height: 100px;
 }
 
 p {
