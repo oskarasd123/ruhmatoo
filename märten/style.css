@@ -4,7 +4,7 @@ nav {
   left: 0;
   width: 100%;
   height: 80px;
-  background: rgba(255, 255, 255, 0.8);
+  background:rgba(245, 232, 210, 0.9);
   border-bottom: 3px solid #000;
   z-index: 1000;
   display: flex;
@@ -63,10 +63,10 @@ html, body {
       height: 100%;
       margin: 0;
       overflow-y: scroll;
-      background: url("taust.jpg") center / cover no-repeat fixed;
+      background-color: #a19c70;
       font-family: "Times New Roman", Times, serif;
       line-height: 1.7;
-      font-size: 18px;
+      font-size: 20px;
     
     }
     
@@ -178,4 +178,21 @@ iframe {
 
 h2, h1 {
   scroll-margin-top: 80px; 
+}
+
+ol {
+  list-style-position: outside;
+  padding-left: 1.2em;
+}
+ol li::marker {
+  font-weight: bold;
+}
+
+
+ul {
+  list-style-position: outside;
+  padding-left: 1.2em;
+}
+ul li::marker {
+  font-weight: bold;
 }
