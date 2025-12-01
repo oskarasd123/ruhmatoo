@@ -30,36 +30,11 @@ body {
     text-decoration-color: #0004;
 }
 
-<<<<<<< HEAD
-.vari {
-    box-shadow: 2px 2px 4px #000a;
-    border-right: solid 2px #fff2;
-    border-bottom: solid 2px #fff2;
-}   
-
-.kast {
-    background-color: #ccc;
-    padding: 8px;
-    border-radius: 20px;
-    width: fit-content;
-}
-
-.taane {
-    margin-left: 15px;
-}
-
-header {
-    background: #ededcd;
-    margin:0;
-    padding:1px;
-    height:90px;
-=======
 header {
     background: var(--header-bg);
     height: 90px;
     display: flex;
     align-items: center;
->>>>>>> rasmus
 }
 
 header h1 {
@@ -77,19 +52,12 @@ header h1 {
     height: calc(100vh - 92px);
 }
 
-<<<<<<< HEAD
-img {
-    border-radius: 15px;
-    margin-left: 0px;
-    margin-bottom: 10px;
-=======
 .kirje-link {
     flex: 1;
     text-decoration: none;
     color: var(--text-color);
     border-bottom: 2px solid #000;
     transition: background-color 0.2s;
->>>>>>> rasmus
 }
 
 .kirje {
