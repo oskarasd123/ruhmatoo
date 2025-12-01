@@ -1,4 +1,4 @@
-// Header hide on scroll
+// Headeri peitmine/kuvamine kerimisel
 let lastScroll = 0;
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', function() {
@@ -8,7 +8,7 @@ window.addEventListener('scroll', function() {
     lastScroll = currentScroll;
 });
 
-// Smooth scroll
+// Sujuv 'scroll'
 document.querySelectorAll('a[href^="#"]').forEach(function(link) {
     link.addEventListener('click', function(e) {
         e.preventDefault();
@@ -17,7 +17,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function(link) {
     });
 });
 
-// Game card click to show description below
+// Mängude kirjeldused
 const gameCards = document.querySelectorAll('.game-card');
 const gameDescriptionContainer = document.getElementById('game-description');
 const gameDescriptionContent = document.getElementById('game-description-content');

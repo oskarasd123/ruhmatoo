@@ -1,14 +1,26 @@
-/* 
-Ühine fail stiili jaoks 
-Kõik stiili peaks siin kirjeldama
-*/
+/* Ühine fail stiili jaoks */
 
 :root {
     --text-color: #000;
+    --header-bg: #ededcd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #f5dacf;
+    color: var(--text-color);
+    height: 100vh;
+    overflow: hidden;
 }
 
 .mitte-link {
-    color:var(--text-color);
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -18,6 +30,7 @@ Kõik stiili peaks siin kirjeldama
     text-decoration-color: #0004;
 }
 
+<<<<<<< HEAD
 .vari {
     box-shadow: 2px 2px 4px #000a;
     border-right: solid 2px #fff2;
@@ -40,28 +53,63 @@ header {
     margin:0;
     padding:1px;
     height:90px;
+=======
+header {
+    background: var(--header-bg);
+    height: 90px;
+    display: flex;
+    align-items: center;
+>>>>>>> rasmus
 }
 
 header h1 {
-    padding:1px;
     margin-left: 5vw;
+    font-size: 1.5rem;
 }
 
-body, div {
-    padding: 0;
-    margin:0;
+.ülemine-piir {
+    border-top: 2px solid #000;
 }
 
-table tr th {
-    border: solid 1px #000;
-}
-table {
-    border-collapse: collapse;
+.konteiner {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 92px);
 }
 
+<<<<<<< HEAD
 img {
     border-radius: 15px;
     margin-left: 0px;
     margin-bottom: 10px;
+=======
+.kirje-link {
+    flex: 1;
+    text-decoration: none;
+    color: var(--text-color);
+    border-bottom: 2px solid #000;
+    transition: background-color 0.2s;
+>>>>>>> rasmus
 }
 
+.kirje {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 2rem;
+    height: 100%;
+}
+
+.kirje-pilt {
+    width: auto;
+    height: 180px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    box-shadow: #0003 0px 4px 8px;
+}
+
+.kirje-nimi {
+    font-size: 1.875rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
