@@ -9,28 +9,11 @@
     padding-bottom: 50vh;
 }
 
-.background p{
+.background p {
     text-shadow: 0 0 10px var(--background-color), 
     0 0 10px var(--background-color), 
     0 0 10px var(--background-color),
     0 0 10px var(--background-color);
-}
-
-body{
-    color: white;
-    background-color: var(--background-color);
-    padding-top: 120px;
-}
-
-header {
-    background: #cdeded;
-    box-shadow: #cdeded 0px 20px 20px, #cdeded60 0px 20px 60px, #cdeded40 0px 50px 300px;
-    position: absolute;
-    top: 0;
-    width: 110vw;
-    margin-left: -5vw;
-    padding-left: 10vw;
-
 }
 
 .lighting {
@@ -43,6 +26,41 @@ header {
     height: 100px;
 }
 
+.logo {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.varjutus {
+    padding: 10px;
+    background-color: #24242450;
+}
+
+.kesk-osa {
+    padding-left: 20vw;
+    font-size: 150%;
+    width: 80vw;
+}
+
+
+
+body{
+    color: white;
+    background-color: var(--background-color);
+    padding-top: 120px;
+    overflow: auto;
+}
+
+header {
+    background: #cdeded;
+    box-shadow: #cdeded 0px 20px 20px, #cdeded60 0px 20px 60px, #cdeded40 0px 50px 300px;
+    position: absolute;
+    top: 0;
+    width: 110vw;
+    margin-left: -5vw;
+    padding-left: 15vw;
+
+}
 
 p {
     margin-bottom: 20px;
@@ -57,6 +75,8 @@ img {
     border-radius: 15px;
     margin-left: 0px;
     margin-bottom: 10px;
+    max-width: 50vw;
+    max-height: 40vh;
 }
 
 details {
